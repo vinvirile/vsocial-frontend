@@ -1,0 +1,23 @@
+{
+  "name": "vsocial",
+  "version": "1.0.0",
+  "description": "An open source Social Media Project with the Node Express MongoDB stack",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "npx node-sass sass/main.scss public/assets/stylesheets/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinvirile/vsocial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinvirile/vsocial/issues"
+  },
+  "homepage": "https://github.com/vinvirile/vsocial#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
