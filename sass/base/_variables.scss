@@ -1,12 +1,32 @@
 // COLORS
-$color-primary: green;
-$color-primary-dark: darkgreen;
+$color-primary-10: #eaf3ec;
+$color-primary-20: #d5e8d8;
+$color-primary-30: #bfdcc5;
+$color-primary-40: #aad0b2;
+$color-primary-50: #95c59f;
+$color-primary-60: #80b98b;
+$color-primary-70: #6bad78;
+$color-primary-80: #55a165;
+$color-primary-90: #409651;
+$color-primary: #2b8a3e;
+$color-primary-110: #277c38;
+$color-primary-120: #226e32;
+$color-primary-130: #1e612b;
+$color-primary-140: #1a5325;
+$color-primary-150: #16451f;
+$color-primary-160: #113719;
+$color-primary-170: #0d2913;
+$color-primary-180: #091c0c;
+$color-primary-190: #040e06;
 
 $color-secondary: blue;
 $color-secondary-dark: darkblue;
 
 $color-tertiary: red;
 $color-tertiary-dark: darkred;
+
+//theme coloring
+$color-grey: #444;
 
 //spacing
 $space-xs: 1.2rem;
@@ -15,3 +35,9 @@ $space-md: 3.6rem;
 $space-xmd: 4.8rem;
 $space-lg: 6.4rem;
 $space-xl: 9.6rem;
+
+//misc
+$container-width: 146rem;
+$default-font-size: 1.6rem;
+$default-font-color: #eee;
+$default-font-family: arial, sans-serif;

@@ -9,4 +9,6 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: darken($color-primary, 32%);
+  font-family: $default-font-family;
 }
