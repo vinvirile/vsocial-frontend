@@ -4,4 +4,7 @@
 @import 'base/base';
 @import 'base/utilities';
 
-@import 'components/_nav.scss';
+@import 'layouts/cardbox';
+
+@import 'components/nav';
+@import 'components/profilecard';

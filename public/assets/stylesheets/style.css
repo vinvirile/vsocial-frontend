@@ -1,14 +1,17 @@
-.container {
-  margin: 0 auto !important; }
+.container, .profilecard__aboutme {
+  margin: 0 auto; }
 
 .nav__searchicon, .nav__search {
-  margin: auto 0 !important; }
+  margin: auto 0; }
 
 .nav__searchicon, .nav__search {
   border-radius: 1.5rem; }
 
-.nav__homelink, .nav__homelink:visited, .nav__homelink:active, .nav__userdropbutton {
+.cardbox, .nav__homelink, .nav__homelink:visited, .nav__homelink:active, .nav__userdropbutton {
   border-radius: 2rem; }
+
+.profilecard__banner__avatar {
+  border-radius: 50%; }
 
 * {
   margin: 0;
@@ -24,6 +27,17 @@ body {
 
 .container {
   max-width: 146rem; }
+
+.grid {
+  display: grid; }
+
+.grid-dash {
+  grid-template-columns: 1fr 2fr 1fr; }
+
+.cardbox {
+  width: 100%;
+  background-color: #0d2913;
+  overflow: hidden; }
 
 .nav {
   display: flex;
@@ -85,6 +99,8 @@ body {
     position: relative; }
     .nav__icon, .nav__icon:visited, .nav__icon:active {
       color: #d0d0d0; }
+    .nav__icon:hover {
+      color: #f7f7f7; }
   .nav__number {
     position: absolute;
     top: 0;
@@ -141,3 +157,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: end; }
+
+.profilecard {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #d5e8d8; }
+  .profilecard__banner {
+    height: 10rem;
+    background-size: cover;
+    position: relative; }
+    .profilecard__banner__avatar {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 40%);
+      height: 7.6rem;
+      width: 7.6rem; }
+  .profilecard__fullname {
+    margin-top: 4.8rem;
+    font-size: 2rem;
+    font-weight: 500; }
+  .profilecard__username {
+    margin: 1.2rem 0;
+    color: #1e612b; }
+  .profilecard__aboutme {
+    width: 60%;
+    margin-bottom: 2.4rem; }
+  .profilecard__stats {
+    border: 1px solid #444;
+    border-left: none;
+    border-right: none;
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: space-around; }
+    .profilecard__stats__followers {
+      flex: 1;
+      border-left: 1px solid #444; }
+      .profilecard__stats__followers__number {
+        font-size: 2rem; }
+      .profilecard__stats__followers__text {
+        margin-top: 1.2rem;
+        color: #1e612b; }
+    .profilecard__stats__following {
+      flex: 1; }
+      .profilecard__stats__following__number {
+        font-size: 2rem; }
+      .profilecard__stats__following__text {
+        margin-top: 1.2rem;
+        color: #1e612b; }
+  .profilecard__profilelink {
+    margin: 2.4rem 0; }
+    .profilecard__profilelink, .profilecard__profilelink:active, .profilecard__profilelink:visited {
+      color: #2b8a3e;
+      text-decoration: none;
+      display: block; }

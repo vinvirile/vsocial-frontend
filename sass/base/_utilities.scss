@@ -2,3 +2,11 @@
   max-width: $container-width;
   @extend %margin-center-h;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid-dash {
+  grid-template-columns: 1fr 2fr 1fr;
+}

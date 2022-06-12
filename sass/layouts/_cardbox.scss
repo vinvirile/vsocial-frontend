@@ -1,0 +1,6 @@
+.cardbox {
+  width: 100%;
+  background-color: $color-primary-170;
+  @extend %border-radius-lg;
+  overflow: hidden;
+}

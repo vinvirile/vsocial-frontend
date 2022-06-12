@@ -1,0 +1,81 @@
+.profilecard {
+  text-align: center;
+  font-size: $default-font-size;
+  color: $color-primary-20;
+  &__banner {
+    height: 10rem;
+    background-size: cover;
+    position: relative;
+    &__avatar {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 40%);
+      @include circle(7.6rem);
+    }
+  }
+
+  &__fullname {
+    margin-top: $space-xmd;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__username {
+    margin: $space-xs 0;
+    color: $color-primary-130;
+  }
+
+  &__aboutme {
+    width: 60%;
+    @extend %margin-center-h;
+    margin-bottom: $space-sm;
+  }
+
+  &__stats {
+    border: 1px solid $color-grey;
+    border-left: none;
+    border-right: none;
+    padding: $space-sm 0;
+    display: flex;
+    justify-content: space-around;
+
+    &__followers {
+      flex: 1;
+      border-left: 1px solid $color-grey;
+
+      &__number {
+        font-size: 2rem;
+      }
+
+      &__text {
+        margin-top: $space-xs;
+        color: $color-primary-130;
+      }
+    }
+
+    &__following {
+      flex: 1;
+
+      &__number {
+        font-size: 2rem;
+      }
+
+      &__text {
+        margin-top: $space-xs;
+        color: $color-primary-130;
+      }
+    }
+  }
+
+  &__profilelink {
+    margin: $space-sm 0;
+    &,
+    &:active,
+    &:visited {
+      color: $color-primary;
+      text-decoration: none;
+      display: block;
+    }
+  }
+}

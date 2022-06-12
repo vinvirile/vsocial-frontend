@@ -1,9 +1,9 @@
 %margin-center-h {
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 
 %margin-center-v {
-  margin: auto 0 !important;
+  margin: auto 0;
 }
 
 %border-radius-xsm {
@@ -24,4 +24,8 @@
 
 %border-radius-lg {
   border-radius: 2rem;
+}
+
+%border-radius-circle {
+  border-radius: 50%;
 }
