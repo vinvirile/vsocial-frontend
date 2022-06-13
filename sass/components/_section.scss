@@ -1,0 +1,9 @@
+.section {
+  height: 90vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

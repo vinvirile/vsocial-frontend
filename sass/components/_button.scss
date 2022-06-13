@@ -1,0 +1,16 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-color: lighten($color-grey, 70%);
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    @extend %border-radius-lg;
+    font-weight: 600;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

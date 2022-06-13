@@ -4,7 +4,10 @@
 @import 'base/base';
 @import 'base/utilities';
 
-@import 'layouts/cardbox';
+@import 'layouts/profilecard';
+@import 'layouts/recommendations';
 
 @import 'components/nav';
-@import 'components/profilecard';
+@import 'components/cardbox';
+@import 'components/button';
+@import 'components/section';

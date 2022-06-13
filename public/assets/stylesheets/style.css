@@ -7,23 +7,28 @@
 .nav__searchicon, .nav__search {
   border-radius: 1.5rem; }
 
-.cardbox, .nav__homelink, .nav__homelink:visited, .nav__homelink:active, .nav__userdropbutton {
+.nav__homelink, .nav__homelink:visited, .nav__homelink:active, .nav__userdropbutton, .cardbox, .btn, .btn:link, .btn:visited {
   border-radius: 2rem; }
 
-.profilecard__banner__avatar {
+.profilecard__banner__avatar, .recommendations img {
   border-radius: 50%; }
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
   background-color: #040e06;
   font-family: arial, sans-serif; }
+
+html,
+body {
+  height: 100vh;
+  overflow: none; }
 
 .container {
   max-width: 146rem; }
@@ -32,14 +37,93 @@ body {
   display: grid; }
 
 .grid-dash {
-  grid-template-columns: 1fr 2fr 1fr; }
+  grid-template-columns: 0.9fr 2fr 0.9fr; }
 
-.cardbox {
-  width: 100%;
-  background-color: #0d2913;
-  overflow: hidden; }
+.profilecard {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #d5e8d8; }
+  .profilecard__banner {
+    height: 10rem;
+    background-size: cover;
+    position: relative; }
+    .profilecard__banner__avatar {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 40%);
+      height: 7.6rem;
+      width: 7.6rem; }
+  .profilecard__fullname {
+    margin-top: 4.8rem;
+    font-size: 2rem;
+    font-weight: 500; }
+  .profilecard__username {
+    margin: 1.2rem 0;
+    color: #1e612b; }
+  .profilecard__aboutme {
+    width: 60%;
+    margin-bottom: 2.4rem; }
+  .profilecard__stats {
+    border: 1px solid #444;
+    border-left: none;
+    border-right: none;
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: space-around; }
+    .profilecard__stats__followers {
+      flex: 1;
+      border-left: 1px solid #444; }
+      .profilecard__stats__followers__number {
+        font-size: 2rem; }
+      .profilecard__stats__followers__text {
+        margin-top: 1.2rem;
+        color: #1e612b; }
+    .profilecard__stats__following {
+      flex: 1; }
+      .profilecard__stats__following__number {
+        font-size: 2rem; }
+      .profilecard__stats__following__text {
+        margin-top: 1.2rem;
+        color: #1e612b; }
+  .profilecard__profilelink {
+    margin: 2.4rem 0; }
+    .profilecard__profilelink, .profilecard__profilelink:active, .profilecard__profilelink:visited {
+      color: #2b8a3e;
+      text-decoration: none;
+      display: block; }
+
+.recommendations {
+  color: #d5e8d8;
+  padding: 2.4rem; }
+  .recommendations img {
+    height: 5.4rem;
+    width: 5.4rem; }
+  .recommendations__userrec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.4rem 0; }
+  .recommendations__userinfo {
+    margin-right: 1.2rem; }
+    .recommendations__userinfo a {
+      display: block;
+      text-decoration: none; }
+    .recommendations__userinfo__name {
+      font-size: 1.6rem; }
+      .recommendations__userinfo__name:link, .recommendations__userinfo__name:visited, .recommendations__userinfo__name:active {
+        color: #bfdcc5; }
+    .recommendations__userinfo__username {
+      font-size: 1.2rem;
+      color: #1e612b; }
+  .recommendations__showmore {
+    color: #2b8a3e;
+    text-decoration: none; }
+    .recommendations__showmore:link, .recommendations__showmore:active, .recommendations__showmore:visited {
+      font-size: 1.4rem; }
 
 .nav {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +143,8 @@ body {
     font-size: 1.6rem;
     color: #2b8a3e;
     font-weight: 700;
-    cursor: text; }
+    cursor: text;
+    box-sizing: content-box; }
   .nav__search {
     outline: none;
     border: none;
@@ -72,7 +157,8 @@ body {
     position: relative;
     color: #bfdcc5;
     font-family: inherit;
-    transition: width 0.5s; }
+    transition: width 0.5s;
+    box-sizing: content-box; }
     .nav__search::placeholder {
       font-size: 1.2rem;
       color: #bfdcc5; }
@@ -132,7 +218,8 @@ body {
     margin-left: 2rem;
     height: 1.6rem;
     padding: 1.4rem 0.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    box-sizing: content-box; }
     .nav__userdropbutton img {
       width: 3.2rem;
       height: 3.2rem;
@@ -158,56 +245,26 @@ body {
     align-items: center;
     justify-content: end; }
 
-.profilecard {
-  text-align: center;
-  font-size: 1.6rem;
-  color: #d5e8d8; }
-  .profilecard__banner {
-    height: 10rem;
-    background-size: cover;
-    position: relative; }
-    .profilecard__banner__avatar {
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translate(-50%, 40%);
-      height: 7.6rem;
-      width: 7.6rem; }
-  .profilecard__fullname {
-    margin-top: 4.8rem;
-    font-size: 2rem;
-    font-weight: 500; }
-  .profilecard__username {
-    margin: 1.2rem 0;
-    color: #1e612b; }
-  .profilecard__aboutme {
-    width: 60%;
+.cardbox {
+  width: 100%;
+  background-color: #0d2913;
+  overflow: hidden; }
+  .cardbox:not(:last-child) {
     margin-bottom: 2.4rem; }
-  .profilecard__stats {
-    border: 1px solid #444;
-    border-left: none;
-    border-right: none;
-    padding: 2.4rem 0;
-    display: flex;
-    justify-content: space-around; }
-    .profilecard__stats__followers {
-      flex: 1;
-      border-left: 1px solid #444; }
-      .profilecard__stats__followers__number {
-        font-size: 2rem; }
-      .profilecard__stats__followers__text {
-        margin-top: 1.2rem;
-        color: #1e612b; }
-    .profilecard__stats__following {
-      flex: 1; }
-      .profilecard__stats__following__number {
-        font-size: 2rem; }
-      .profilecard__stats__following__text {
-        margin-top: 1.2rem;
-        color: #1e612b; }
-  .profilecard__profilelink {
-    margin: 2.4rem 0; }
-    .profilecard__profilelink, .profilecard__profilelink:active, .profilecard__profilelink:visited {
-      color: #2b8a3e;
-      text-decoration: none;
-      display: block; }
+
+.btn, .btn:link, .btn:visited {
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-weight: 600; }
+
+.btn:hover {
+  cursor: pointer; }
+
+.section {
+  height: 90vh;
+  overflow-y: scroll;
+  scrollbar-width: none; }
+  .section::-webkit-scrollbar {
+    display: none; }

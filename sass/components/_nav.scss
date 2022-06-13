@@ -1,4 +1,5 @@
 .nav {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +25,7 @@
     color: $color-primary;
     font-weight: 700;
     cursor: text;
+    box-sizing: content-box;
   }
 
   &__search {
@@ -41,6 +43,7 @@
     color: $color-primary-30;
     font-family: inherit;
     transition: width 0.5s;
+    box-sizing: content-box;
 
     &::placeholder {
       font-size: 1.2rem;
@@ -131,6 +134,7 @@
     height: 1.6rem;
     padding: 1.4rem 0.2rem;
     cursor: pointer;
+    box-sizing: content-box;
 
     img {
       width: 3.2rem;

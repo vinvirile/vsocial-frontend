@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -8,7 +9,12 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   background-color: darken($color-primary, 32%);
   font-family: $default-font-family;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow: none;
 }

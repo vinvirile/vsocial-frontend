@@ -3,4 +3,7 @@
   background-color: $color-primary-170;
   @extend %border-radius-lg;
   overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: $space-sm;
+  }
 }
