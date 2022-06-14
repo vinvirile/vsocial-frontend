@@ -4,6 +4,6 @@
   @extend %border-radius-lg;
   overflow: hidden;
   &:not(:last-child) {
-    margin-bottom: $space-sm;
+    margin-bottom: $space-xs;
   }
 }

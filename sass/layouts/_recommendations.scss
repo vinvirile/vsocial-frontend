@@ -2,10 +2,6 @@
   color: $color-primary-20;
   padding: $space-sm;
 
-  & img {
-    @include circle(5.4rem);
-  }
-
   &__header {
   }
 

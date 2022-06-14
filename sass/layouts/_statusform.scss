@@ -1,0 +1,31 @@
+.statusform {
+  display: grid;
+  grid-template-columns: 0.25fr 2fr;
+  padding: $space-xs $space-sm;
+
+  &__field {
+    height: 3.6rem;
+    background-color: $color-primary-150;
+    @extend %border-radius-md;
+    resize: none;
+    font-size: 1.6rem;
+    display: grid;
+    scrollbar-width: none;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+    color: $color-primary-30;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__send {
+    margin-top: 0.8rem;
+    background-color: $color-primary !important;
+    width: 30%;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,11 @@
+.avatar {
+  @include circle(5.4rem);
+
+  &__small {
+    @include circle(3.2rem);
+  }
+
+  &__lg {
+    @include circle(7.6rem);
+  }
+}
