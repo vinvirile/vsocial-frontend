@@ -1,0 +1,46 @@
+.trends {
+  color: $color-primary-30;
+  font-size: $default-font-size;
+  padding: $space-xs $space-sm;
+
+  &__heading {
+    font-size: 2rem;
+
+    &__secondary {
+      font-size: 1.4rem;
+      margin: $space-sm 0;
+      color: $color-primary-60;
+    }
+  }
+
+  &__hashbox {
+    margin: $space-xs 0;
+
+    &__link {
+      &:link,
+      &:visited,
+      &:active {
+        color: $color-primary-30;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      color: $color-primary-60;
+    }
+  }
+
+  &__morehash {
+    &:link,
+    &:visited,
+    &:active {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}
