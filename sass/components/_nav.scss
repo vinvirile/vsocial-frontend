@@ -68,6 +68,7 @@
       display: flex;
       align-items: center;
       margin-right: 2rem;
+      cursor: pointer;
     }
 
     &__icon {
@@ -94,6 +95,7 @@
 
     &:hover {
       color: lighten($color-grey, 70%);
+      cursor: pointer;
     }
   }
 

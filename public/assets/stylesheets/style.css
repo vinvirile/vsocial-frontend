@@ -111,7 +111,8 @@ body {
       display: block;
       text-decoration: none; }
     .recommendations__userinfo__name {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      font-weight: 600; }
       .recommendations__userinfo__name:link, .recommendations__userinfo__name:visited, .recommendations__userinfo__name:active {
         color: #bfdcc5; }
     .recommendations__userinfo__username {
@@ -224,6 +225,13 @@ body {
       padding: 1.2rem 2.4rem;
       margin-top: 1.2rem;
       background-color: #113719;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: all 0.5s;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -247,14 +255,20 @@ body {
     margin-bottom: 2.4rem; }
 
 .liked {
-  background-color: #f2506c; }
+  background-color: #f2506c;
+  transition: all 0.5s; }
   .liked span {
     display: none; }
+  .liked:hover {
+    background-color: #f2506c; }
 
 .reposted {
-  background-color: #2ecc9b; }
+  background-color: #2ecc9b;
+  transition: all 0.5s; }
   .reposted span {
     display: none; }
+  .reposted:hover {
+    background-color: #2ecc9b; }
 
 .trends {
   color: #bfdcc5;
@@ -329,7 +343,8 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    cursor: pointer; }
   .nav__homelink__icon {
     font-size: 1.8rem;
     color: #2b8a3e; }
@@ -344,7 +359,8 @@ body {
     .nav__icon, .nav__icon:visited, .nav__icon:active {
       color: #d0d0d0; }
     .nav__icon:hover {
-      color: #f7f7f7; }
+      color: #f7f7f7;
+      cursor: pointer; }
   .nav__number {
     position: absolute;
     top: 0;

@@ -119,6 +119,13 @@
       padding: 1.2rem 2.4rem;
       margin-top: $space-xs;
       background-color: $color-primary-160;
+      -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+            transition: all 0.5s;
 
       &:hover {
         background-color: $color-primary-140;
@@ -162,16 +169,27 @@
 
 .liked {
   background-color: #f2506c;
+  transition: all 0.5s;
+  
 
   span {
     display: none;
+  }
+
+  &:hover {
+    background-color: #f2506c;
   }
 }
 
 .reposted {
   background-color: #2ecc9b;
+  transition: all 0.5s;
 
   span {
     display: none;
+  }
+
+  &:hover {
+    background-color: #2ecc9b;
   }
 }
