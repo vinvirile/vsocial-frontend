@@ -78,4 +78,34 @@
       display: block;
     }
   }
+
+  &__interactions {
+    display: flex;
+    padding: $space-xs $space-sm;
+    justify-content: space-around;
+    button {
+      width: 45%;
+    }
+
+    &__follow-btn {
+      background-color: $color-primary !important;
+
+      &:hover {
+        background-color: $color-primary-90 !important;
+      }
+    }
+  }
+
+  &__infobox {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    text-align: start;
+    padding: $space-sm 0;
+    row-gap: $space-xs;
+    column-gap: 0.8rem;
+    ion-icon {
+      justify-self: end;
+      color: $color-primary;
+    }
+  }
 }

@@ -96,6 +96,26 @@ body {
       color: #2b8a3e;
       text-decoration: none;
       display: block; }
+  .profilecard__interactions {
+    display: flex;
+    padding: 1.2rem 2.4rem;
+    justify-content: space-around; }
+    .profilecard__interactions button {
+      width: 45%; }
+    .profilecard__interactions__follow-btn {
+      background-color: #2b8a3e !important; }
+      .profilecard__interactions__follow-btn:hover {
+        background-color: #409651 !important; }
+  .profilecard__infobox {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    text-align: start;
+    padding: 2.4rem 0;
+    row-gap: 1.2rem;
+    column-gap: 0.8rem; }
+    .profilecard__infobox ion-icon {
+      justify-self: end;
+      color: #2b8a3e; }
 
 .recommendations {
   color: #d5e8d8;
@@ -431,7 +451,8 @@ body {
   padding: 1rem 2rem;
   border: none;
   outline: none;
-  font-weight: 600; }
+  font-weight: 600;
+  color: black; }
 
 .btn:hover {
   cursor: pointer; }
@@ -452,3 +473,34 @@ body {
   .avatar__lg {
     height: 7.6rem;
     width: 7.6rem; }
+
+.notification, .notification:link, .notification:visited {
+  text-decoration: none;
+  display: flex;
+  color: #d5e8d8;
+  padding: 1.2rem 2.4rem;
+  background-color: #1e612b; }
+
+.notification__old {
+  background-color: #0d2913 !important; }
+
+.notification__info {
+  align-self: center;
+  padding: 0 1.2rem; }
+
+.notification__title {
+  font-weight: 700;
+  font-size: 1.6rem; }
+
+.notification__time {
+  font-size: 1.2rem;
+  color: #aad0b2; }
+
+.notifications__heading {
+  color: #2b8a3e;
+  font-size: 3.2rem;
+  padding: 2.4rem 0; }
+  .notifications__heading__sub {
+    color: #16451f;
+    font-size: 2.4rem;
+    padding: 1.2rem 0; }

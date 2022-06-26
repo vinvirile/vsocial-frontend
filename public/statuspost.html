@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="assets/script/textareaautofill.js"></script>
+    <script defer src="assets/script/script.js"></script>
+    <title>vSocial Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <section class="section-nav">
+        <div class="nav container">
+          <div class="nav__leftside">
+            <div class="nav__logo">V</div>
+            <label for="search" class="nav__searchicon">
+              <ion-icon name="search"></ion-icon>
+            </label>
+            <input
+              id="search"
+              class="nav__search"
+              type="text"
+              name="search"
+              placeholder="Explore"
+              autocomplete="off"
+            />
+          </div>
+          <div class="nav__rightside">
+            <span href="#" class="nav__homelink">
+              <ion-icon class="nav__homelink__icon" name="home"></ion-icon>
+              <span class="nav__linktext">Home</span>
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="chatbubbles"></ion-icon>
+              <!-- <span class="nav__number">2</span> -->
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="notifications"></ion-icon>
+              <span class="nav__number">2</span>
+            </span>
+            <span class="nav__verticalline"></span>
+            <div href="#" class="nav__userdropbutton">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                class="nav__avatar"
+                alt="User Icon"
+              />
+              <span class="nav__username">Marcus Bate</span>
+              <span class="nav__symbol">▾</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="grid grid-dash">
+          <section class="section section_1">
+            <div class="cardbox profilecard">
+              <div
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                "
+                class="profilecard__banner"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt=""
+                  class="profilecard__banner__avatar"
+                />
+              </div>
+              <p class="profilecard__fullname">Marcus Bate</p>
+              <p class="profilecard__username">@marcusbate</p>
+              <p class="profilecard__aboutme">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="profilecard__stats">
+                <div class="profilecard__stats__following">
+                  <p class="profilecard__stats__following__number">7,284</p>
+                  <p class="profilecard__stats__following__text">Following</p>
+                </div>
+
+                <div class="profilecard__stats__followers">
+                  <p class="profilecard__stats__followers__number">9,158</p>
+                  <p class="profilecard__stats__followers__text">Followers</p>
+                </div>
+              </div>
+              <a href="#" class="profilecard__profilelink">My Profile</a>
+            </div>
+
+            <div class="cardbox recommendations">
+              <h2 class="recommendations__header">Recommanded Users</h2>
+
+              <div class="recommendations__userrec">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt=""
+                    class="avatar"
+                  />
+                </a>
+                <div class="recommendations__userinfo">
+                  <a href="#" class="recommendations__userinfo__name"
+                    >Marcus Bate</a
+                  >
+                  <a href="#" class="recommendations__userinfo__username"
+                    >@marcusbate</a
+                  >
+                </div>
+
+                <button class="btn">Follow</button>
+              </div>
+
+              <div class="recommendations__userrec">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                    alt=""
+                    class="avatar"
+                  />
+                </a>
+                <div class="recommendations__userinfo">
+                  <a href="#" class="recommendations__userinfo__name"
+                    >Amy Richards</a
+                  >
+                  <a href="#" class="recommendations__userinfo__username"
+                    >@peronasofab</a
+                  >
+                </div>
+
+                <button class="btn">Follow</button>
+              </div>
+
+              <div class="recommendations__userrec">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                    alt=""
+                    class="avatar"
+                  />
+                </a>
+                <div class="recommendations__userinfo">
+                  <a href="#" class="recommendations__userinfo__name"
+                    >Katrina West</a
+                  >
+                  <a href="#" class="recommendations__userinfo__username"
+                    >@katrain22</a
+                  >
+                </div>
+
+                <button class="btn">Follow</button>
+              </div>
+
+              <a href="#" class="recommendations__showmore">Show More</a>
+            </div>
+          </section>
+          <section class="section section_2">
+            
+
+            <div class="status">
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name"
+                          >James Ridley</a
+                        >
+                        <ion-icon
+                          class="status__struct__verified"
+                          name="checkmark-circle"
+                        ></ion-icon>
+                        <p class="status__struct__username">@ridleyjames</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">Few minutes ago</p>
+                    <p class="status__struct__message">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum neque cum quia doloremque dolore, provident
+                      corporis soluta pariatur fugiat eius? Optio adipisci
+                      assumenda minima a! 😉😋🫶
+                    </p>
+
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>752k</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>21.2k</span>
+                      </div>
+                      
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-fsi3jfs status__struct__btn">
+                        <ion-icon class="l-fsi3jfs" name="heart"></ion-icon> <span class="l-fsi3jfs">Like</span>
+                      </div>
+                      <div class="r-fsi3jfs status__struct__btn">
+                        <ion-icon class="r-fsi3jfs" name="repeat"></ion-icon>
+                        <span class="r-fsi3jfs">Repost</span>
+                      </div>
+                      <div class="status__struct__btn report">
+                        <ion-icon class="report" name="flag"></ion-icon>
+                        <span class="report">Report</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardbox status">
+                <div class="statusform">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="Avatar"
+                    class="avatar statusform__avatar"
+                  />
+                  <textarea
+                    placeholder="Comment here..."
+                    class="statusform__field"
+                    maxlength="120"
+                  ></textarea>
+                  <div class="space"></div>
+                  <button class="btn statusform__send comment">Send</button>
+                </div>
+              </div>
+
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://i.ytimg.com/vi/bILE5BEyhdo/maxresdefault.jpg"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name">Rin Jones</a>
+                        <p class="status__struct__username">@notpikachu</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">55 mins ago</p>
+                    <p class="status__struct__message">Lorem, ipsum dolor</p>
+                    <img
+                      src="https://m.media-amazon.com/images/M/MV5BZTRkNjhmNDQtNTcyZC00YzMwLThkMGMtYmI3MTQ4MTQzNGJiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg"
+                      class="status__img"
+                    />
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>58k</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>1.5k</span>
+                      </div>
+                      <div class="status__struct__comments">
+                        <a href="#">55 comments</a>
+                      </div>
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-jfasisd status__struct__btn">
+                        <ion-icon class="l-jfasisd" name="heart"></ion-icon> 
+                        <span class="l-jfasisd">Like</span>
+                      </div>
+                      <div class="r-jfasisd status__struct__btn reposted">
+                        <ion-icon class="r-jfasisd" name="repeat"></ion-icon>
+                        <span class="r-jfasisd">Repost</span>
+                      </div>
+                      <div class="status__struct__btn com">
+                        <ion-icon class="com" name="chatbubble-ellipses"></ion-icon>
+                        <span class="com">Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://ichef.bbci.co.uk/news/976/cpsprodpb/15E47/production/_124717698_gettyimages-1395200655.jpg"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name">Elon Musk</a>
+                        <ion-icon
+                          class="status__struct__verified"
+                          name="checkmark-circle"
+                        ></ion-icon>
+                        <p class="status__struct__username">@elonmusk</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">2 hrs ago</p>
+                    <p class="status__struct__message">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Id, excepturi 😏
+                      <a class="status__hashtag" href="">#TRILLIONAIRE</a>
+                    </p>
+
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>1.2M</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>98.2k</span>
+                      </div>
+                      <div class="status__struct__comments">
+                        <a href="#">1.2k comments</a>
+                      </div>
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-3jfisdn3 status__struct__btn liked">
+                        <ion-icon class="l-3jfisdn3" name="heart"></ion-icon> 
+                        <span class="l-3jfisdn3">Like</span>
+                      </div>
+                      <div class="r-jfasisd status__struct__btn">
+                        <ion-icon class="r-jfasisd" name="repeat"></ion-icon>
+                        <span class="r-jfasisd">Repost</span>
+                      </div>
+                      <div class="status__struct__btn com">
+                        <ion-icon class="com" name="chatbubble-ellipses"></ion-icon>
+                        <span class="com">Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name">Rick Martin</a>
+                        <p class="status__struct__username">@rickmartin</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">13 hours ago</p>
+                    <p class="status__struct__message">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. 🎉🙌
+                      Perspiciatis dolor earum, veritatis asperiores velit
+                      reprehenderit quibusdam. Eum
+                    </p>
+
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>214</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>8</span>
+                      </div>
+                      <div class="status__struct__comments">
+                        <a href="#">2 comments</a>
+                      </div>
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-fajisd status__struct__btn liked">
+                        <ion-icon class="l-fajisd" name="heart"></ion-icon>
+                        <span class="l-fajisd">Like</span>
+                      </div>
+                      <div class="r-fjaisdj status__struct__btn reposted">
+                        <ion-icon class="r-fjaisdj" name="repeat"></ion-icon>
+                        <span class="r-fjaisdj">Repost</span>
+                      </div>
+                      <div class="status__struct__btn com">
+                        <ion-icon class="com" name="chatbubble-ellipses"></ion-icon>
+                        <span class="com">Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name">Jack Doom</a>
+                        <p class="status__struct__username">@jackdoom</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">May 29</p>
+                    <p class="status__struct__message">
+                      Lorem ipsum dolor sit amet
+                    </p>
+
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>4235</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>1.2k</span>
+                      </div>
+                      <div class="status__struct__comments">
+                        <a href="#">25 comments</a>
+                      </div>
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-asejfna status__struct__btn">
+                        <ion-icon class="l-asejfna" name="heart"></ion-icon> 
+                        <span class="l-asejfna">Like</span>
+                      </div>
+                      <div class="r-jasijfs status__struct__btn">
+                        <ion-icon class="r-jasijfs" name="repeat"></ion-icon>
+                        <span class="r-jasijfs">Repost</span>
+                      </div>
+                      <div class="status__struct__btn com">
+                        <ion-icon class="com" name="chatbubble-ellipses"></ion-icon>
+                        <span class="com">Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section_3">
+            <div class="cardbox trends">
+              <h1 class="trends__heading">Trending</h1>
+
+              <h3 class="trends__heading__secondary">Hashtags</h3>
+
+              <div class="trends__hashbox">
+                <a href="#" class="trends__hashbox__link">#TRILLIONAIRE</a>
+                <p>87.1k posts</p
+              </div>
+
+              <div class="trends__hashbox">
+                <a href="#" class="trends__hashbox__link">#POKEMON</a>
+                <p>25.2k posts</p
+              </div>
+
+              <div class="trends__hashbox">
+                <a href="#" class="trends__hashbox__link">#USA</a>
+                <p>12.2k posts</p
+              </div>
+
+              <div class="trends__hashbox">
+                <a href="#" class="trends__hashbox__link">#BringE3Back</a>
+                <p>7.5k posts</p>
+              </div>
+
+              <a href="#" class="trends__morehash">View More</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

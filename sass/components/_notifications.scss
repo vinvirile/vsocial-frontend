@@ -1,0 +1,42 @@
+.notification {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: flex;
+    color: $color-primary-20;
+    padding: $space-xs $space-sm;
+    background-color: $color-primary-130;
+  }
+
+  &__old {
+    background-color: $color-primary-170 !important;
+  }
+
+  &__info {
+    align-self: center;
+    padding: 0 $space-xs;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  &__time {
+    font-size: 1.2rem;
+    color: $color-primary-40;
+  }
+}
+
+.notifications__heading {
+  color: $color-primary;
+  font-size: 3.2rem;
+  padding: $space-sm 0;
+
+  &__sub {
+    color: $color-primary-150;
+    font-size: 2.4rem;
+    padding: $space-xs 0;
+  }
+}
