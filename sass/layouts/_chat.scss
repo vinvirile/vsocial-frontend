@@ -1,0 +1,30 @@
+.chat {
+  padding: $space-xs $space-sm;
+
+  &__heading {
+    margin-bottom: $space-xs;
+    font-size: 2rem;
+  }
+
+  &__threads {
+    &__thread {
+      display: flex;
+      &__info {
+        align-self: center;
+        margin-left: 0.8rem;
+        &__name {
+          font-size: 1.4rem;
+        }
+
+        &__timestamp {
+          color: grey;
+          font-size: 1rem;
+        }
+
+        &__message {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

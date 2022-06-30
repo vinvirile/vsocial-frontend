@@ -43,6 +43,9 @@ body {
   grid-template-columns: 0.9fr 2fr 0.9fr;
   gap: 1.2rem; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .profilecard {
   text-align: center;
   font-size: 1.6rem;
@@ -314,6 +317,24 @@ body {
     text-decoration: none;
     color: #2b8a3e; }
 
+.chat {
+  padding: 1.2rem 2.4rem; }
+  .chat__heading {
+    margin-bottom: 1.2rem;
+    font-size: 2rem; }
+  .chat__threads__thread {
+    display: flex; }
+    .chat__threads__thread__info {
+      align-self: center;
+      margin-left: 0.8rem; }
+      .chat__threads__thread__info__name {
+        font-size: 1.4rem; }
+      .chat__threads__thread__info__timestamp {
+        color: grey;
+        font-size: 1rem; }
+      .chat__threads__thread__info__message {
+        font-size: 1.2rem; }
+
 .nav {
   height: 10vh;
   display: flex;
@@ -463,6 +484,8 @@ body {
   scrollbar-width: none; }
   .section::-webkit-scrollbar {
     display: none; }
+  .section__overwrite3 {
+    grid-column: span 2; }
 
 .avatar {
   height: 5.4rem;

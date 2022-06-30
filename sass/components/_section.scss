@@ -6,4 +6,8 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  &__overwrite3 {
+    grid-column: span 2;
+  }
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="assets/script/textareaautofill.js"></script>
+    <script defer src="assets/script/script.js"></script>
+    <title>vSocial Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <section class="section-nav">
+        <div class="nav container">
+          <div class="nav__leftside">
+            <div class="nav__logo">V</div>
+            <label for="search" class="nav__searchicon">
+              <ion-icon name="search"></ion-icon>
+            </label>
+            <input
+              id="search"
+              class="nav__search"
+              type="text"
+              name="search"
+              placeholder="Explore"
+              autocomplete="off"
+            />
+          </div>
+          <div class="nav__rightside">
+            <span href="#" class="nav__homelink">
+              <ion-icon class="nav__homelink__icon" name="home"></ion-icon>
+              <span class="nav__linktext">Home</span>
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="chatbubbles"></ion-icon>
+              <!-- <span class="nav__number">2</span> -->
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="notifications"></ion-icon>
+              <span class="nav__number">2</span>
+            </span>
+            <span class="nav__verticalline"></span>
+            <div href="#" class="nav__userdropbutton">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                class="nav__avatar"
+                alt="User Icon"
+              />
+              <span class="nav__username">Marcus Bate</span>
+              <span class="nav__symbol">▾</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="grid grid-dash">
+          <section class="section section_1">
+            <div class="cardbox chat">
+              <h1 class="chat__heading">Messages</h1>
+
+              <div class="chat__threads">
+                <div class="chat__threads__thread cursor-pointer">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    class="avatar"
+                    alt="user"
+                  />
+                  <div class="chat__threads__thread__info">
+                    <h4 class="chat__threads__thread__info__name">
+                      Name
+                      <span class="chat__threads__thread__info__timestamp"
+                        >2m</span
+                      >
+                    </h4>
+                    <p class="chat__threads__thread__info__message">
+                      This is a message of the latest chat
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section_2 section__overwrite3"></section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
