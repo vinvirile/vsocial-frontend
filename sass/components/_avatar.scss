@@ -1,7 +1,7 @@
 .avatar {
   @include circle(5.4rem);
 
-  &__small {
+  &__sm {
     @include circle(3.2rem);
   }
 
