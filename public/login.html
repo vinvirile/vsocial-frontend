@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="assets/script/auth.js"></script>
+    <title>VSocial - Login</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="loginbox">
+          <div class="grid grid-2-cols loginbox__container">
+            <div class="loginbox__form">
+              <h1 class="loginbox__form__heading">Sign in</h1>
+              <div class="loginbox__form__demoaccount">
+                Login as Demo Account
+              </div>
+
+              <p class="loginbox__form__text">or use your account</p>
+
+              <p class="loginbox__form__err"></p>
+
+              <form action="" method="POST">
+                <div class="loginbox__form__inputbox">
+                  <label for="username" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="person"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__username"
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Email or Username"
+                  />
+                </div>
+
+                <div class="loginbox__form__inputbox">
+                  <label for="password" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="key"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__password"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <p>
+                  <a href="#" class="loginbox__form__link">
+                    Forgot your password?
+                  </a>
+                </p>
+                <button class="loginbox__form__signinbtn">sign in</button>
+              </form>
+            </div>
+            <div class="loginbox__signup">
+              <h1 class="loginbox__signup__heading">No Account, No Worries!</h1>
+
+              <p class="loginbox__signup__cta">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae?
+              </p>
+
+              <a class="loginbox__signup__signupbtn" href="#">sign up</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

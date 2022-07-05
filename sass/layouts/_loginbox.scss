@@ -1,0 +1,154 @@
+.loginbox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $default-font-size;
+
+  &__container {
+    width: 60%;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 70, 8, 0.8);
+  }
+
+  &__form {
+    background-color: white;
+
+    &__heading {
+      font-size: 3.2rem;
+      margin-top: 2rem;
+    }
+
+    &__demoaccount {
+      border: 2px solid grey;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      margin: 2rem 0;
+    }
+
+    &__text {
+      margin-bottom: 0.4rem;
+      font-size: 1.4rem;
+    }
+
+    &__err {
+      color: red;
+      margin: 0.8rem 0;
+    }
+
+    &__inputbox {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__field {
+      outline: none;
+      border: none;
+      background-color: $color-primary-30;
+      @extend %border-radius-xmd;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 60%;
+      height: 1.6rem;
+      @extend %margin-center-v;
+      padding: 1.6rem 0.8rem;
+      position: relative;
+      color: $color-primary-160;
+      font-family: inherit;
+      transition: width 0.5s;
+      box-sizing: content-box;
+      margin: 0.2rem 0;
+    }
+
+    &__icon {
+      height: 1.6rem;
+      width: 2%;
+      @extend %border-radius-xmd;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: $color-primary-30;
+      @extend %margin-center-v;
+      padding: 1.6rem 2.4rem;
+      font-size: 1.6rem;
+      color: $color-primary;
+      font-weight: 700;
+      cursor: text;
+      box-sizing: content-box;
+    }
+
+    &__link {
+      &,
+      &:visited,
+      &:active,
+      &:link {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        margin: 1.2rem 0;
+      }
+    }
+
+    &__signinbtn {
+      // display: inline-block;
+      background-color: $color-primary-120;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      outline: none;
+      border-radius: 2rem;
+      color: #fff;
+      margin: 2rem 0;
+      width: 30%;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  &__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-primary-10;
+    background-image: linear-gradient(
+      45deg,
+      $color-primary-70,
+      $color-primary-130
+    );
+
+    &__heading {
+      font-size: 3.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    &__cta {
+      font-size: $default-font-size;
+      margin: 1.6rem 0;
+    }
+
+    &__signupbtn {
+      &,
+      &:link,
+      &:visited,
+      &:active {
+        width: 30%;
+        border: 2px solid #fff;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+}

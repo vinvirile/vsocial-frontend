@@ -1,13 +1,13 @@
 .container, .profilecard__aboutme {
   margin: 0 auto; }
 
-.nav__searchicon, .nav__search {
+.loginbox__form__field, .loginbox__form__icon, .nav__searchicon, .nav__search {
   margin: auto 0; }
 
 .statusform__field, .status__img {
   border-radius: 1rem; }
 
-.status__struct__btn, .nav__searchicon, .nav__search {
+.status__struct__btn, .loginbox__form__field, .loginbox__form__icon, .nav__searchicon, .nav__search {
   border-radius: 1.5rem; }
 
 .nav__homelink, .nav__homelink:visited, .nav__homelink:active, .nav__userdropbutton, .cardbox, .btn, .btn:link, .btn:visited {
@@ -42,6 +42,9 @@ body {
 .grid-dash {
   grid-template-columns: 0.9fr 2fr 0.9fr;
   gap: 1.2rem; }
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -417,6 +420,109 @@ body {
     .chatbox__formbox__sendicon {
       font-size: 2.8rem; }
 
+.loginbox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem; }
+  .loginbox__container {
+    width: 60%;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 70, 8, 0.8); }
+  .loginbox__form {
+    background-color: white; }
+    .loginbox__form__heading {
+      font-size: 3.2rem;
+      margin-top: 2rem; }
+    .loginbox__form__demoaccount {
+      border: 2px solid grey;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      margin: 2rem 0; }
+    .loginbox__form__text {
+      margin-bottom: 0.4rem;
+      font-size: 1.4rem; }
+    .loginbox__form__err {
+      color: red;
+      margin: 0.8rem 0; }
+    .loginbox__form__inputbox {
+      display: flex;
+      justify-content: center; }
+    .loginbox__form__field {
+      outline: none;
+      border: none;
+      background-color: #bfdcc5;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 60%;
+      height: 1.6rem;
+      padding: 1.6rem 0.8rem;
+      position: relative;
+      color: #113719;
+      font-family: inherit;
+      transition: width 0.5s;
+      box-sizing: content-box;
+      margin: 0.2rem 0; }
+    .loginbox__form__icon {
+      height: 1.6rem;
+      width: 2%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: #bfdcc5;
+      padding: 1.6rem 2.4rem;
+      font-size: 1.6rem;
+      color: #2b8a3e;
+      font-weight: 700;
+      cursor: text;
+      box-sizing: content-box; }
+    .loginbox__form__link, .loginbox__form__link:visited, .loginbox__form__link:active, .loginbox__form__link:link {
+      display: inline-block;
+      text-decoration: none;
+      color: #222;
+      margin: 1.2rem 0; }
+    .loginbox__form__signinbtn {
+      background-color: #226e32;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      outline: none;
+      border-radius: 2rem;
+      color: #fff;
+      margin: 2rem 0;
+      width: 30%;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer; }
+  .loginbox__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #eaf3ec;
+    background-image: linear-gradient(45deg, #6bad78, #1e612b); }
+    .loginbox__signup__heading {
+      font-size: 3.2rem;
+      margin-bottom: 1.6rem; }
+    .loginbox__signup__cta {
+      font-size: 1.6rem;
+      margin: 1.6rem 0; }
+    .loginbox__signup__signupbtn, .loginbox__signup__signupbtn:link, .loginbox__signup__signupbtn:visited, .loginbox__signup__signupbtn:active {
+      width: 30%;
+      border: 2px solid #fff;
+      text-decoration: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      border-radius: 2rem;
+      text-transform: uppercase;
+      margin-top: 1.6rem; }
+  .loginbox__icon {
+    width: 2rem; }
+
 .nav {
   height: 10vh;
   display: flex;
@@ -609,3 +715,32 @@ body {
     color: #16451f;
     font-size: 2.4rem;
     padding: 1.2rem 0; }
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem; }
+  .loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent; }
+    .loader div:nth-child(1) {
+      animation-delay: -0.45s; }
+    .loader div:nth-child(2) {
+      animation-delay: -0.3s; }
+    .loader div:nth-child(3) {
+      animation-delay: -0.15s; }
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
