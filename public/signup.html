@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="assets/script/auth.js"></script>
+    <title>VSocial - Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="loginbox">
+          <div class="grid grid-2-cols loginbox__container">
+            <div class="loginbox__form" style="order: 1">
+              <h1 class="loginbox__form__heading">Sign Up</h1>
+
+              <p class="loginbox__form__text" style="margin: 1.2rem 0">
+                Disclaimer: There is also a Demo Account on the login page!
+              </p>
+
+              <p class="loginbox__form__err"></p>
+
+              <form class="signupform" action="" method="POST">
+                <div class="loginbox__form__inputbox">
+                  <label for="email" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="mail"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__email"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="loginbox__form__inputbox">
+                  <label for="username" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="person"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__username"
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                  />
+                </div>
+
+                <div class="loginbox__form__inputbox">
+                  <label for="password" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="key"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__password"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <div class="loginbox__form__inputbox">
+                  <label for="repassword" class="loginbox__form__icon">
+                    <ion-icon class="loginbox__icon" name="key"></ion-icon>
+                  </label>
+                  <input
+                    class="loginbox__form__field form__repassword"
+                    type="password"
+                    name="repassword"
+                    id="repassword"
+                    placeholder="Re-Enter Password"
+                  />
+                </div>
+
+                <button class="loginbox__form__signinbtn">sign up</button>
+              </form>
+            </div>
+            <div class="loginbox__signup">
+              <h1 class="loginbox__signup__heading">
+                Already have an account?
+              </h1>
+
+              <p class="loginbox__signup__cta">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae?
+              </p>
+
+              <a class="loginbox__signup__signupbtn" href="signin.html"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
