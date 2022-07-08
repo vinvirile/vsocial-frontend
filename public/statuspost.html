@@ -14,8 +14,9 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="assets/script/textareaautofill.js"></script>
+    <script defer src="assets/script/dropdown.js"></script>
     <script defer src="assets/script/script.js"></script>
-    <title>vSocial Dashboard</title>
+    <title>Marcus's Profile</title>
   </head>
   <body>
     <nav>
@@ -56,12 +57,26 @@
                 alt="User Icon"
               />
               <span class="nav__username">Marcus Bate</span>
-              <span class="nav__symbol">▾</span>
+              <span class="nav__symbol">&blacktriangledown;</span>
+              <div class="nav__userdropbutton__dropdown dropdown">
+                <ul>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Friends</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><hr class="dropdown__divider" /></li>
+                  <li>
+                    <a class="nav__userdropbutton__dropdown__logout" href="#">
+                      <ion-icon name="power"></ion-icon> <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </nav>
+
 
     <main>
       <div class="container">

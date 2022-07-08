@@ -54,6 +54,12 @@ if (formSignUp !== '') {
         err.textContent = 'All fields are required!'
         return
       }
+
+      if (formPassword !== formRePassword) {
+        signinBtn.textContent = 'Sign in'
+        err.textContent = "Passwords don't match!"
+        return
+      }
       window.location.href = 'index.html'
     }, 3000)
   })
