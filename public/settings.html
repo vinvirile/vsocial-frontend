@@ -16,6 +16,7 @@
     <script defer src="assets/script/textareaautofill.js"></script>
     <script defer src="assets/script/dropdown.js"></script>
     <script defer src="assets/script/script.js"></script>
+    <script defer src="assets/script/settings.js"></script>
     <title>vSocial Dashboard</title>
   </head>
   <body>
@@ -112,7 +113,78 @@
               </div>
               <a href="#" class="profilecard__profilelink">My Profile</a>
             </div>
+          </section>
 
+          <section class="section section_2">
+            <div class="cardbox">
+              <div class="settings">
+                <h1 class="settings__heading">Settings</h1>
+                <form action="" method="POST">
+                  <div>
+                    <input
+                      class="settings__input"
+                      type="text"
+                      name="fullname"
+                      required
+                    />
+                    <span class="settings__floatinglabel">Full Name</span>
+                  </div>
+
+                  <div>
+                    <textarea
+                      class="settings__input textarea"
+                      type="text"
+                      name="bio"
+                      required
+                    ></textarea>
+                    <span class="settings__floatinglabel">Bio</span>
+                  </div>
+
+                  <div>
+                    <input
+                      class="settings__input"
+                      type="text"
+                      name="location"
+                      required
+                    />
+                    <span class="settings__floatinglabel">Location</span>
+                  </div>
+
+                  <div>
+                    <input
+                      class="settings__input"
+                      type="text"
+                      name="occupation"
+                      required
+                    />
+                    <span class="settings__floatinglabel">Occupation</span>
+                  </div>
+
+                  <div>
+                    <input class="settings__input" type="date" required />
+                  </div>
+
+                  <div class="settings__avatar-field">
+                    <input
+                      class="settings__input avatar-url"
+                      type="text"
+                      name="avatarurl"
+                      value="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                      required
+                    />
+                    <span class="settings__floatinglabel">Avatar URL</span>
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                      alt="avatar"
+                      class="avatar settings-avatar"
+                    />
+                  </div>
+                  <button class="btn">Update</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="section section_3">
             <div class="cardbox recommendations">
               <h2 class="recommendations__header">Recommended Users</h2>
 
@@ -179,8 +251,6 @@
               <a href="#" class="recommendations__showmore">Show More</a>
             </div>
           </section>
-          <section class="section section_2"></section>
-          <section class="section section_3"></section>
         </div>
       </div>
     </main>

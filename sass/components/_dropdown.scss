@@ -8,6 +8,7 @@
   font-weight: 700;
   display: none;
   cursor: default;
+  pointer-events: none;
 
   &.active {
     display: block;
@@ -40,5 +41,6 @@
     text-decoration: none;
     color: #fff;
     display: block;
+    pointer-events: all;
   }
 }

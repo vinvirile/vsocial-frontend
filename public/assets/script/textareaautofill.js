@@ -1,4 +1,4 @@
-const tx = document.getElementsByClassName('statusform__field')
+const tx = document.getElementsByClassName('textarea')
 for (let i = 0; i < tx.length; i++) {
   tx[i].setAttribute(
     'style',

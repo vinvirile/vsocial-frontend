@@ -5,7 +5,7 @@
 .loginbox__form__field, .loginbox__form__icon, .nav__searchicon, .nav__search {
   margin: auto 0; }
 
-.statusform__field, .status__img {
+.statusform__field, .status__img, .settings__input {
   border-radius: 1rem; }
 
 .status__struct__btn, .loginbox__form__field, .loginbox__form__icon, .nav__searchicon, .nav__search {
@@ -524,6 +524,55 @@ body {
   .loginbox__icon {
     width: 2rem; }
 
+.settings {
+  padding: 2rem;
+  color: #bfdcc5; }
+  .settings__heading {
+    font-size: 2.4rem;
+    margin-bottom: 2rem; }
+  .settings div {
+    position: relative;
+    margin-bottom: 2rem; }
+  .settings__input:focus ~ .settings__floatinglabel,
+  .settings__input:not(:focus):valid ~ .settings__floatinglabel {
+    top: 30%;
+    bottom: 10px;
+    font-size: 1.2rem;
+    opacity: 1;
+    color: #2b8a3e; }
+  .settings__input {
+    padding-top: 2rem;
+    padding-left: 0.4rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 1px solid #bfdcc5;
+    color: inherit;
+    padding-bottom: 2rem; }
+  .settings__input.textarea {
+    padding-top: 2rem; }
+  .settings__input[type='date'] {
+    width: 40%;
+    padding: 0 1rem; }
+  .settings__floatinglabel {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: #000;
+    transform: translateY(-50%);
+    color: inherit; }
+  .settings__avatar-field {
+    display: flex; }
+    .settings__avatar-field .settings__input {
+      width: 80%; }
+    .settings__avatar-field .avatar {
+      margin-left: auto; }
+
 .nav {
   height: 10vh;
   display: flex;
@@ -779,7 +828,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   display: none;
-  cursor: default; }
+  cursor: default;
+  pointer-events: none; }
   .dropdown.active {
     display: block; }
   .dropdown ul {
@@ -799,4 +849,5 @@ body {
   .dropdown a:active {
     text-decoration: none;
     color: #fff;
-    display: block; }
+    display: block;
+    pointer-events: all; }
