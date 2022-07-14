@@ -16,6 +16,14 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

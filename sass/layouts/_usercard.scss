@@ -1,0 +1,69 @@
+.usercard-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.usercard {
+  width: 95%;
+  background-color: $color-primary-170;
+  @extend %border-radius-lg;
+  overflow: hidden;
+
+  &__content {
+    padding: 2rem 1rem;
+    text-align: center;
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    color: $color-primary-30;
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+    display: block;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__username {
+    font-size: 1.2rem;
+    color: $color-primary-140;
+    margin-bottom: 1.2rem;
+    display: block;
+    font-weight: 700;
+  }
+
+  &__avatarbox {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &__img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &__heading {
+    color: $color-primary;
+    font-size: 3.2rem;
+    padding: $space-sm 0;
+
+    &__sub {
+      color: $color-primary-150;
+      font-size: 2.4rem;
+      padding: $space-xs 0;
+    }
+  }
+}
