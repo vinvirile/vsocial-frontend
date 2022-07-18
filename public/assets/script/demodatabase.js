@@ -56,3 +56,24 @@ const statusPosts = [
       'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80',
   },
 ]
+
+const chatMessages = [
+  {
+    incoming: true,
+    id: 1,
+    message: 'Hi, Im Mackenzie',
+    deleted: false /* */,
+  },
+  {
+    incoming: true,
+    id: 2,
+    message: 'I wanted to talk to you about something that bothered me',
+    deleted: false /* */,
+  },
+  {
+    incoming: false,
+    id: 3,
+    message: "Hi, sorry I've been busy. What is the matter?",
+    deleted: false /* */,
+  },
+]
