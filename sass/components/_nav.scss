@@ -5,6 +5,10 @@
   align-items: center;
   padding: $space-md 0;
 
+  @include media('<=tablet') {
+    display: none;
+  }
+
   &__logo {
     font-size: 4.4rem;
     color: $color-primary;
@@ -207,5 +211,35 @@
     display: flex;
     align-items: center;
     justify-content: end;
+  }
+}
+
+.mobile-nav {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-md 0;
+  display: none;
+
+  @include media('<=tablet') {
+    display: flex;
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: relative;
+
+    .nav__number {
+      top: 12%;
+      color: $color-primary-30;
+      position: absolute;
+    }
+
+    &__icon {
+      font-size: 5.8rem;
+      color: $color-primary-30;
+    }
+    margin-right: 2rem;
   }
 }

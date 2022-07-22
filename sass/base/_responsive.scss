@@ -1,0 +1,5 @@
+html {
+  @include media('>phone') {
+    display: none;
+  }
+}

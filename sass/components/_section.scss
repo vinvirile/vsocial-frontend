@@ -11,3 +11,15 @@
     grid-column: span 2;
   }
 }
+
+.section_1.home {
+  @include media('<=tablet') {
+    display: none;
+  }
+}
+
+.section_3.home {
+  @include media('<=tablet') {
+    display: none;
+  }
+}

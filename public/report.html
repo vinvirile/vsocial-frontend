@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="assets/script/textareaautofill.js"></script>
+    <script defer src="assets/script/dropdown.js"></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"
+    ></script>
+    <script defer src="assets/script/demodatabase.js"></script>
+    <title>vSocial Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <section class="section-nav">
+        <div class="mobile-nav">
+          <div class="nav__leftside">
+            <div class="nav__logo">V</div>
+          </div>
+          <div class="nav__rightside">V</div>
+        </div>
+        <div class="nav container">
+          <div class="nav__leftside">
+            <div class="nav__logo">V</div>
+            <label for="search" class="nav__searchicon">
+              <ion-icon name="search"></ion-icon>
+            </label>
+            <input
+              id="search"
+              class="nav__search"
+              type="text"
+              name="search"
+              placeholder="Explore"
+              autocomplete="off"
+            />
+          </div>
+          <div class="nav__rightside">
+            <span href="#" class="nav__homelink">
+              <ion-icon class="nav__homelink__icon" name="home"></ion-icon>
+              <span class="nav__linktext">Home</span>
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="chatbubbles"></ion-icon>
+              <!-- <span class="nav__number">2</span> -->
+            </span>
+            <span href="#" class="nav__icon">
+              <ion-icon name="notifications"></ion-icon>
+              <span class="nav__number">2</span>
+            </span>
+            <span class="nav__verticalline"></span>
+            <div href="#" class="nav__userdropbutton">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                class="nav__avatar"
+                alt="User Icon"
+              />
+              <span class="nav__username">Marcus Bate</span>
+              <span class="nav__symbol">&blacktriangledown;</span>
+              <div class="nav__userdropbutton__dropdown dropdown">
+                <ul>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Friends</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><hr class="dropdown__divider" /></li>
+                  <li>
+                    <a class="nav__userdropbutton__dropdown__logout" href="#">
+                      <ion-icon name="power"></ion-icon> <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="grid grid-dash">
+          <section class="section"></section>
+          <section class="section section_2">
+            <div class="cardbox">
+              <div class="statusform">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="Avatar"
+                  class="avatar statusform__avatar"
+                />
+                <textarea
+                  placeholder="Report Status..."
+                  class="statusform__field textarea"
+                  maxlength="120"
+                ></textarea>
+                <div class="space"></div>
+                <button class="btn statusform__send">Report</button>
+              </div>
+            </div>
+
+            <div class="status">
+              <div class="cardbox">
+                <div class="status__struct">
+                  <div class="status__struct__img">
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="status__structinfo">
+                    <div class="status__struct__userdata">
+                      <div class="status__struct__author">
+                        <a href="#" class="status__struct__name"
+                          >James Ridley</a
+                        >
+                        <ion-icon
+                          class="status__struct__verified"
+                          name="checkmark-circle"
+                        ></ion-icon>
+                        <p class="status__struct__username">@ridleyjames</p>
+                      </div>
+                      <span class="status__struct__options">
+                        &middot;&middot;&middot;
+                      </span>
+                    </div>
+
+                    <p class="status__struct__timestamp">Few minutes ago</p>
+                    <p class="status__struct__message">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum neque cum quia doloremque dolore, provident
+                      corporis soluta pariatur fugiat eius? Optio adipisci
+                      assumenda minima a! 😉😋🫶
+                    </p>
+
+                    <div class="status__struct__reactions">
+                      <div class="status__struct__stats">
+                        <ion-icon name="heart"></ion-icon> <span>752k</span>
+                        <ion-icon name="repeat"></ion-icon>
+                        <span>21.2k</span>
+                      </div>
+                      <div class="status__struct__comments">
+                        <a href="#">258 comments</a>
+                      </div>
+                    </div>
+                    <div class="status__struct__interactions">
+                      <div class="l-fsi3jfs status__struct__btn">
+                        <ion-icon class="l-fsi3jfs" name="heart"></ion-icon>
+                        <span class="l-fsi3jfs">Like</span>
+                      </div>
+                      <div class="r-fsi3jfs status__struct__btn">
+                        <ion-icon class="r-fsi3jfs" name="repeat"></ion-icon>
+                        <span class="r-fsi3jfs">Repost</span>
+                      </div>
+                      <div class="status__struct__btn com">
+                        <ion-icon
+                          class="com"
+                          name="chatbubble-ellipses"
+                        ></ion-icon>
+                        <span class="com">Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section"></section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -5,11 +5,25 @@
 
 .grid {
   display: grid;
+
+  @include media('<phone') {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.grid.login {
+  @include media('<=tablet') {
+    display: block;
+  }
 }
 
 .grid-dash {
   grid-template-columns: 0.9fr 2fr 0.9fr;
   gap: $space-xs;
+
+  @include media('<=tablet') {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-2-cols {

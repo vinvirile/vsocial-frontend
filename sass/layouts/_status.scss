@@ -2,6 +2,8 @@
   color: $color-primary-30;
   font-size: $default-font-size;
 
+  overflow: hidden;
+
   &__structinfo {
     flex: 1;
     margin-left: 2.4rem;
@@ -55,6 +57,47 @@
       -webkit-user-select: none;
       -ms-user-select: none;
       -webkit-touch-callout: none;
+      position: relative;
+
+      &__tail {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid $color-primary;
+        position: absolute;
+        right: 12%;
+        top: -12%;
+      }
+
+      &__list {
+        list-style: none;
+        position: absolute;
+        transform: translate(-75%, 25%);
+
+        background-color: $color-primary;
+        z-index: 1000;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        overflow: hidden;
+
+        &__btn {
+          display: flex;
+          // justify-content: center;
+          padding: 0.4rem 1.6rem;
+          cursor: pointer;
+
+          &:first-child {
+            color: #f2506c;
+          }
+
+          ion-icon {
+          }
+
+          &:hover {
+            background-color: $color-primary-120;
+          }
+        }
+      }
     }
 
     &__timestamp {
@@ -110,6 +153,12 @@
 
     &__interactions {
       display: flex;
+
+      span {
+        @include media('<=tablet') {
+          display: none;
+        }
+      }
     }
 
     &__btn {
@@ -164,6 +213,8 @@
     cursor: pointer;
     margin-bottom: $space-sm;
     @extend %border-radius-md;
+    max-width: 90%;
+    max-height: 30%;
   }
 }
 

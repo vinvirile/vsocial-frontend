@@ -6,7 +6,7 @@
   font-size: $default-font-size;
 
   &__container {
-    width: 60%;
+    width: 75%;
     text-align: center;
     border-radius: 1rem;
     overflow: hidden;
@@ -15,10 +15,13 @@
 
   &__form {
     background-color: white;
+    @include media('<=tablet') {
+      border-radius: 2rem;
+    }
 
     &__heading {
       font-size: 3.2rem;
-      margin-top: 2rem;
+      padding-top: 2rem;
     }
 
     &__demoaccount {
@@ -101,15 +104,29 @@
       border-radius: 2rem;
       color: #fff;
       margin: 2rem 0;
-      width: 30%;
+      max-width: 60%;
       text-transform: uppercase;
       font-weight: 700;
       cursor: pointer;
+    }
+
+    &__signuplnk {
+      display: block;
+      padding-bottom: 2rem;
+      color: $color-primary;
+      display: none;
+
+      @include media('<=tablet') {
+        display: block;
+      }
     }
   }
 
   &__signup {
     display: flex;
+    @include media('<=tablet') {
+      display: none;
+    }
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -119,6 +136,10 @@
       $color-primary-70,
       $color-primary-130
     );
+
+    @include media('<=tablet') {
+      display: none;
+    }
 
     &__heading {
       font-size: 3.2rem;
