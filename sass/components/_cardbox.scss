@@ -6,4 +6,7 @@
   &:not(:last-child) {
     margin-bottom: $space-xs;
   }
+
+  position: relative;
+  z-index: 0;
 }

@@ -3,7 +3,6 @@
   font-size: $default-font-size;
 
   overflow: hidden;
-
   &__structinfo {
     flex: 1;
     margin-left: 2.4rem;
@@ -214,7 +213,6 @@
     margin-bottom: $space-sm;
     @extend %border-radius-md;
     max-width: 90%;
-    max-height: 30%;
   }
 }
 

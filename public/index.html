@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
     <script
       type="module"
@@ -23,7 +24,36 @@
   <body>
     <nav>
       <section class="section-nav">
+        <div class="background-blur active"></div>
         <div class="mobile-nav">
+          <div class="mobile-nav__menu active"> <!--flexed-->
+            <div class="mobile-nav__menu__close">
+              <ion-icon name="close"></ion-icon>
+            </div>
+            <div class="mobile-nav__profile">
+              <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+              <h1>Marcus Bate</h1>
+            </div>
+            <div class="mobile-nav__menu__list">
+              <ul>
+                <li>
+                  <a class="mobile-nav__menu__box__link" href="#">My Profile</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__menu__box__link" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__menu__box__link" href="#">Notifications</a> <span>1</span>
+                </li>
+                <li>
+                  <a class="mobile-nav__menu__box__link" href="#">Chat</a> <span>1</span>
+                </li>
+                <li>
+                  <a class="mobile-nav__menu__box__link" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="nav__leftside">
             <div class="nav__logo">V</div>
           </div>
