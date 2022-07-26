@@ -102,13 +102,15 @@ statusPosts.forEach(post => {
 
   interactionBtn.forEach(btn => {
     btn.addEventListener('click', ele => {
-      let classNames = ele.target.className.split(' ')
-      let element = classNames[0]
-      let arr = element.split('')
-      let type = arr[0]
-      console.log(classNames)
-      console.log(element)
-      console.log(type)
+      // let classNames = ele.target.className.split(' ')
+      // let element = classNames[0]
+      // let arr = element.split('')
+      // let type = arr[0]
+      // console.log(classNames)
+      // console.log(element)
+      // console.log(type)
+
+      let [type, arr, element, classNames] = decipherClass(ele)
 
       // this breaks sometimes
       if (classNames.includes('com')) {
@@ -144,24 +146,4 @@ statusPosts.forEach(post => {
       console.log(postID)
     })
   })
-})
-
-const mobileBtn = document.querySelector('.mobile-nav__btn')
-const mobileBtnClose = document.querySelector('.mobile-nav__menu__close')
-const mobileMenu = document.querySelector('.mobile-nav__menu')
-const backgroundBlur = document.querySelector('.background-blur')
-
-mobileBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active')
-  backgroundBlur.classList.toggle('active')
-})
-
-mobileBtnClose.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active')
-  backgroundBlur.classList.toggle('active')
-})
-
-backgroundBlur.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active')
-  backgroundBlur.classList.toggle('active')
 })

@@ -65,15 +65,71 @@ const chatMessages = [
     deleted: false /* */,
   },
   {
-    incoming: true,
+    incoming: false,
     id: 2,
     message: 'I wanted to talk to you about something that bothered me',
     deleted: false /* */,
   },
   {
-    incoming: false,
+    incoming: true,
     id: 3,
     message: "Hi, sorry I've been busy. What is the matter?",
     deleted: false /* */,
   },
 ]
+
+const messages = {
+  elon: {
+    messages: [
+      {
+        incoming: false,
+        id: 1,
+        message: 'How about that free Cybertruck? ;)',
+        deleted: false /* */,
+      },
+      {
+        incoming: true,
+        id: 2,
+        message:
+          "Since you created this amazing website, I'll give you a small discount ;)",
+        deleted: false /* */,
+      },
+      {
+        incoming: true,
+        id: 3,
+        message: '1% off :)',
+        deleted: false /* */,
+      },
+      {
+        incoming: false,
+        id: 4,
+        message: 'lmao business is business. 1% off is still a good amount',
+        deleted: false /* */,
+      },
+    ],
+  },
+
+  mackenzie: {
+    messages: [
+      {
+        incoming: true,
+        id: 1,
+        message: 'you should definitely come down to new york city',
+        deleted: false /* */,
+      },
+      {
+        incoming: false,
+        id: 2,
+        message:
+          "I've always wanted to go there. Let me finish a few projects first and I'll be on my way sometime this weekend",
+        deleted: false /* */,
+      },
+      {
+        incoming: true,
+        id: 3,
+        message: 'cool beans, see you there',
+        deleted: false /* */,
+      },
+    ],
+  },
+}
