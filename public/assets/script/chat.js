@@ -1,9 +1,13 @@
 // grabbing DOM elements
-const chatBox = document.querySelector('.chatbox__messages')
+const sectionOne = document.querySelector('.section_1')
+const chatBox = document.querySelector('.chatbox')
+const chatThreadsBox = document.querySelector('.chat')
+const chatBoxMessages = document.querySelector('.chatbox__messages')
 const inputMessage = document.querySelector('.chatbox__formbox__field')
 const sendBtn = document.querySelector('.chatbox__formbox__send')
 const chatImg = document.querySelector('.avatar__sm')
 const chatHeading = document.querySelector('.chatbox__headingbox__name')
+const closeChat = document.querySelector('.chatbox__headingbox__close')
 const threads = document.querySelectorAll('.chat__threads__thread')
 
 function sanitize(string) {
@@ -18,6 +22,15 @@ function sanitize(string) {
   const reg = /[&<>"'/]/gi
   return string.replace(reg, match => map[match])
 }
+
+// Fixing responsiveness for window resizing
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1080) {
+    chatBox.style = ''
+    chatThreadsBox.style = ''
+    sectionOne.style.display = ''
+  }
+})
 
 // This is for sending messages
 sendBtn.addEventListener('click', () => {
@@ -38,7 +51,7 @@ sendBtn.addEventListener('click', () => {
     return
   }
 
-  chatBox.prepend(newChat(message, false))
+  chatBoxMessages.prepend(newChat(message, false))
 })
 
 // Creates a Chat Bubble Element and "returns" the "element". This is not already prepended!
@@ -66,11 +79,13 @@ const newChat = (message, receiver, id) => {
 
 // Premade chat test messages being loaded from demodatabase.js
 chatMessages.forEach(message => {
-  chatBox.prepend(newChat(message.message, message.incoming, message.id))
+  chatBoxMessages.prepend(
+    newChat(message.message, message.incoming, message.id)
+  )
 })
 
 const displayChat = id => {
-  chatBox.innerHTML = ''
+  chatBoxMessages.innerHTML = ''
   if (!id) return
 
   if (!messages[id]) return
@@ -81,7 +96,9 @@ const displayChat = id => {
   chatHeading.textContent = id
 
   messages[id]['messages'].forEach(message => {
-    chatBox.prepend(newChat(message.message, message.incoming, message.id))
+    chatBoxMessages.prepend(
+      newChat(message.message, message.incoming, message.id)
+    )
   })
 }
 
@@ -91,9 +108,19 @@ threads.forEach(thread => {
 
     console.log(type, arr)
 
+    if (window.innerWidth < 1080) {
+      chatBox.style.display = 'block'
+      chatThreadsBox.style.display = 'none'
+      sectionOne.style.display = 'none'
+    }
+
     const chatID = arr[1]
     displayChat(chatID)
   })
 })
 
-// displayChat('mackenzie')
+closeChat.addEventListener('click', () => {
+  chatBox.style = ''
+  chatThreadsBox.style = ''
+  sectionOne.style.display = ''
+})

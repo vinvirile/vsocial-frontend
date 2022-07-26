@@ -382,9 +382,6 @@ body {
 
 .chat {
   color: #d5e8d8; }
-  @media (max-width: 1080px) {
-    .chat {
-      display: none; } }
   .chat__heading {
     margin: 1.2rem 2.4rem;
     font-size: 2rem;
@@ -416,6 +413,9 @@ body {
 .chatbox {
   color: #d5e8d8;
   height: 88vh; }
+  @media (max-width: 1080px) {
+    .chatbox {
+      display: none; } }
   .chatbox__headingbox {
     display: flex;
     background-color: #0d2913;
@@ -427,6 +427,14 @@ body {
       font-size: 1.6rem;
       font-weight: 700;
       margin-left: 1.2rem; }
+    .chatbox__headingbox__close {
+      font-size: 3.2rem;
+      margin-left: auto;
+      transform: translateY(12%);
+      cursor: pointer; }
+      @media (min-width: 1080px) {
+        .chatbox__headingbox__close {
+          display: none; } }
   .chatbox__messages {
     height: 80%;
     padding: 1.2rem;
@@ -489,10 +497,6 @@ body {
       cursor: pointer; }
     .chatbox__formbox__sendicon {
       font-size: 2.8rem; }
-
-@media (max-width: 1080px) {
-  .section__overwrite3 {
-    position: absolute; } }
 
 .loginbox {
   height: 100vh;

@@ -3,7 +3,7 @@
   color: $color-primary-20;
 
   @include media('<=tablet') {
-    display: none;
+    // display: none;
   }
 
   &__heading {
@@ -61,7 +61,7 @@
   height: 88vh;
 
   @include media('<=tablet') {
-    // display: none;
+    display: none;
   }
 
   &__headingbox {
@@ -76,6 +76,17 @@
       font-size: $default-font-size;
       font-weight: 700;
       margin-left: 1.2rem;
+    }
+
+    &__close {
+      font-size: 3.2rem;
+      margin-left: auto;
+      transform: translateY(12%);
+      cursor: pointer;
+
+      @include media('>=tablet') {
+        display: none;
+      }
     }
   }
 
@@ -145,9 +156,6 @@
 
     // box-sizing: border-box;
     // margin: 0;
-    &:focus {
-      // outline: none;
-    }
 
     &__field {
       background-color: transparent;
@@ -186,6 +194,8 @@
 
 @include media('<=tablet') {
   .section__overwrite3 {
-    position: absolute;
+    // position: absolute;
+    // width: 100%;
+    // z-index: -1;
   }
 }
